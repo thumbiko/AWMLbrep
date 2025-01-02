@@ -1,0 +1,12 @@
+docker network create biko2024
+780861a92c3802b920e61e352b8f338fdf5677de074546c924210886191b030d
+
+docker create --name biko_instance --network biko2024 --network-alias instancebiko -t -p 25432:5432 -e POSTGRES_USER=docker -e POSTGRES_PASS=docker -v my_first_spatialdb_data:/var/lib/postgresql kartoza/postgis
+
+Digest: sha256:b700342c925bc42e33fd39d5907a9f7e179906b1d13e26b7084987c18f020b85
+Status: Downloaded newer image for kartoza/postgis:latest
+4a8ded084374fba5e41b58c1195e327678cebed113ec1acfcf2c5afa8dac7f56
+
+
+
+docker create --name pgadmin4 --network awm2024 --network-alias pgadmin4 -p 20080:80 -t -e PGADMIN_DEFAULT_EMAIL=thumbikonyasulu@ymail.com -e PGADMIN_DEFAULT_PASSWORD=biko1234 -v my_pgadmin4_data:/var/lib/pgadmin dpage/pgadmin4

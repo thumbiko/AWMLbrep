@@ -1,0 +1,25 @@
+.leftNav, .midNav, .rightNav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .leftNav, .midNav, .rightNav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .leftNav button, .midNav button, .rightNav button {
+    margin-right: 10px;
+  }
+  
+  .midNav {
+    flex-grow: 1;
+  }
+  
+  .rightNav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
